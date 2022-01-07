@@ -1,15 +1,21 @@
 .main-heading {
   font-size: 45px;
+  margin-bottom: 20px;
 }
 
 .dates {
   color: #ff3980;
   font-size: 30px;
+
+  margin-bottom: 20px;
 }
 
 .intro-description {
   text-align: center;
   font-size: 25px;
+
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .button {
@@ -19,4 +25,9 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 10px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
