@@ -1,0 +1,22 @@
+.main-heading {
+  font-size: 45px;
+}
+
+.dates {
+  color: #ff3980;
+  font-size: 30px;
+}
+
+.intro-description {
+  text-align: center;
+  font-size: 25px;
+}
+
+.button {
+  background-color: #ff3980;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+}
