@@ -31,3 +31,70 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.faq {
+  background-color: white;
+  color: #191635;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.question-container {
+  margin-bottom: 40px;
+}
+
+.question {
+  font-size: 25px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.answer {
+  font-size: 20px;
+}
+
+.quote-container {
+  background-color: white;
+  color: #191635;
+  text-align: center;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.quote {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 20px;
+}
+
+.video-container {
+  background-color: #191635;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+.video-heading {
+  color: white;
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+
+.video-frame {
+  border: 0px;
+}
+
