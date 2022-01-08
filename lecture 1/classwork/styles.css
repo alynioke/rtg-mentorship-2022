@@ -1,3 +1,7 @@
+body {
+  font-family: 'PT Mono', serif;
+}
+
 .main-heading {
   font-size: 45px;
   margin-bottom: 20px;
@@ -33,7 +37,6 @@
 }
 
 .faq {
-  width: 100vw;
   background-color: white;
   color: #191635;
 
@@ -79,14 +82,12 @@
 }
 
 .video-container {
-  width: 100vw;
   background-color: #191635;
 
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 100px;
   padding-right: 100px;
-
 }
 
 .video-heading {
@@ -99,4 +100,3 @@
 .video-frame {
   border: 0px;
 }
-
