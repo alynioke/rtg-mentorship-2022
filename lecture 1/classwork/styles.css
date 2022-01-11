@@ -1,7 +1,31 @@
+/* REUSABLE STYLINGS START */
 body {
   font-family: 'PT Mono', serif;
 }
 
+.button {
+  background-color: #ff3980;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #ff3980;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
+}
+/* REUSABLE STYLINGS  END */
+
+/* INTRO SLIDE START */
 .intro {
   height: 85vh;
   color: white;
@@ -36,34 +60,17 @@ body {
   padding-left: 100px;
   padding-right: 100px;
 }
+/* INTRO SLIDE END */
 
-.button {
-  background-color: #ff3980;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 10px;
-  border: 1px solid #ff3980;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.button:hover {
-  background-color: white;
-  color: black;
-  transition: all 0.5s;
-}
-
+/* LEARN MORE START */
 .learn-more {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
+/* LEARN MORE END */
 
+/* FAQ START */
 .faq {
   background-color: white;
   color: #191635;
@@ -88,7 +95,9 @@ body {
 .answer {
   font-size: 20px;
 }
+/* FAQ START */
 
+/* QUOTE START */
 .quote-container {
   background-color: white;
   color: #191635;
@@ -108,7 +117,9 @@ body {
 .author {
   font-size: 20px;
 }
+/* QUOTE END */
 
+/* VIDEO START */
 .video-container {
   background-color: #191635;
 
@@ -132,3 +143,4 @@ body {
 .video-frame {
   border: 0px;
 }
+/* VIDEO END */
