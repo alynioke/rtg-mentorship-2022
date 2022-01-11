@@ -2,6 +2,19 @@ body {
   font-family: 'PT Mono', serif;
 }
 
+.intro {
+  height: 85vh;
+  color: white;
+  background: url(background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* creates cool parallax scrolling effect */
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .main-heading {
   font-size: 45px;
   margin-bottom: 20px;
@@ -39,6 +52,7 @@ body {
 }
 
 .learn-more {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
