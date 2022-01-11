@@ -44,11 +44,18 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 10px;
+  border: 1px solid #ff3980;
 
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
 }
 
 .learn-more {
