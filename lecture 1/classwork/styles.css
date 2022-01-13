@@ -1,26 +1,16 @@
-/* VARIOUS ELEMENTS START */
-body,
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Mono", serif;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+/* REUSABLE STYLINGS START */
+body {
+  font-family: 'PT Mono', serif;
 }
 
 .button {
   background-color: #ff3980;
   color: white;
   font-size: 20px;
-
   text-transform: uppercase;
   text-decoration: none;
-
-  border: none;
   border-radius: 10px;
+  border: 1px solid #ff3980;
 
   padding-top: 15px;
   padding-bottom: 15px;
@@ -31,34 +21,28 @@ html {
 .button:hover {
   background-color: white;
   color: black;
-  border: 1px solid #ff3980;
   transition: all 0.5s;
 }
-/* VARIOUS ELEMENTS END */
+/* REUSABLE STYLINGS  END */
 
 /* INTRO SLIDE START */
 .intro {
-  width: 100vw;
   height: 85vh;
-
   color: white;
-
-  background-color: #191635;
   background: url(background.jpg);
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed; /* creates cool parallax scrolling effect */
 
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  background-attachment: fixed; /* creates cool parallax scrolling effect */
 }
 
 .main-heading {
   font-size: 45px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .dates {
@@ -66,6 +50,7 @@ html {
   font-size: 30px;
 
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .intro-description {
@@ -79,22 +64,14 @@ html {
 
 /* LEARN MORE START */
 .learn-more {
-  width: 100vw;
-  height: 15vh;
-
-  background-color: white;
-
+  margin-top: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 /* LEARN MORE END */
 
 /* FAQ START */
 .faq {
-  width: 100vw;
-
   background-color: white;
   color: #191635;
 
@@ -134,7 +111,6 @@ html {
 
 .quote {
   font-size: 30px;
-
   margin-bottom: 20px;
 }
 
@@ -144,9 +120,7 @@ html {
 /* QUOTE END */
 
 /* VIDEO START */
-.video {
-  width: 100vw;
-
+.video-container {
   background-color: #191635;
 
   padding-top: 100px;
@@ -156,7 +130,6 @@ html {
 
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -165,5 +138,9 @@ html {
   font-size: 30px;
 
   margin-bottom: 20px;
+}
+
+.video-frame {
+  border: 0px;
 }
 /* VIDEO END */
