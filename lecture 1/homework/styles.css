@@ -23,6 +23,10 @@ body {
   color: black;
   transition: all 0.5s;
 }
+
+.highlighted-text:hover {
+  text-decoration: underline;
+}
 /* REUSABLE STYLINGS  END */
 
 /* INTRO SLIDE START */
