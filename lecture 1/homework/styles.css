@@ -1,0 +1,147 @@
+/* REUSABLE STYLINGS START */
+body {
+  font-family: 'PT Mono', serif;
+}
+
+.button {
+  background-color: #ff3980;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #ff3980;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
+}
+/* REUSABLE STYLINGS  END */
+
+/* INTRO SLIDE START */
+.intro {
+  height: 45vh;
+  color: white;
+  background: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* creates cool parallax scrolling effect */
+  opacity: 0.85;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-heading {
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dates {
+  color: #ff3980;
+  font-size: 30px;
+
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro-description {
+  text-align: center;
+  font-size: 25px;
+
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* INTRO SLIDE END */
+
+/* LEARN MORE START */
+.learn-more {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+/* LEARN MORE END */
+
+/* FAQ START */
+.faq {
+  background-color: white;
+  color: #191635;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.question-container {
+  margin-bottom: 40px;
+}
+
+.question {
+  font-size: 25px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.answer {
+  font-size: 20px;
+}
+/* FAQ START */
+
+/* QUOTE START */
+.quote-container {
+  background-color: white;
+  color: #191635;
+  text-align: center;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.quote {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 20px;
+}
+/* QUOTE END */
+
+/* VIDEO START */
+.video-container {
+  background-color: #191635;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video-heading {
+  color: white;
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+
+.video-frame {
+  border: 0px;
+}
+/* VIDEO END */
