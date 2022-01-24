@@ -3,6 +3,10 @@ body {
   font-family: "Audiowide", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   background-color: #ff3980;
   color: white;
@@ -122,6 +126,11 @@ body {
 .author {
   font-size: 20px;
 }
+
+.author-link {
+  color: #ff3980;
+}
+
 /* QUOTE END */
 
 /* VIDEO START */
@@ -169,3 +178,25 @@ body {
   text-decoration: underline;
 }
 /* FOOTER END */
+
+/* SOCIAL START */
+.social-container {
+  background-color: #191635;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 30px;
+}
+
+.social-heading {
+  font-size: 30px;
+}
+
+.social-image {
+  width: 80px;
+  height: 80px;
+  fill: white;
+}
+/* SOCIAL END */
