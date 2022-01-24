@@ -9,10 +9,10 @@ Imagine, you are approached by Riga TechGirls manager and asked to create a ment
 Regular work of frontend developer starts with seeing end result — a design. A designer provides an image to frontend developer, and developer starts thinking how to turn this image into the code. We need HTML/CSS as a base, on top of that we later create interactivity (with JavaScript). 
 
 Here is what Riga TechGirls designer provided you:
-* [Design](https://drive.google.com/file/d/1yZ8MJEHJq2Sc6rnEaAcTjjNVzlKdvm56/view?usp=sharing). "APPLY" button is a link that should redirect to mentorship website. Usually it's shared not as simple image, but as a file in figma, photoshop, sketch. In same app you can view all info about colors and sizes.
+* [Design](https://drive.google.com/file/d/1yZ8MJEHJq2Sc6rnEaAcTjjNVzlKdvm56/view?usp=sharing). Note: "APPLY" button is a link that should redirect to mentorship website. Buttons have "hover" effect. Usually design is shared not as simple image, but as a file in figma, photoshop, sketch — that are special apps to view designs. 
 *  Usually it's not shared, but for your convenience I added also [Video demo](https://drive.google.com/file/d/12ZvKiaxh89W2gZdwhCicAqi9LtUUYmvP/view?usp=sharing) to see page interactively (buttons pressed, video turned on, how background is scrolled nicely). 
 
-Usually, developers are given exact values of all sizes for spacings, font sizes, image sizes and color codes for backgrounds. You don't need to do all precisely! Explore new colors, mark spacings by eye in pixels — build your own! It's okay if it will not be pixel perfect. But if you want some basics to start with, here it is:
+Usually, developers can see exact values of all sizes for spacings, font sizes, image sizes and color codes for backgrounds in design app. But now, you don't need to do all precisely! Explore new colors, mark spacings by eye in pixels — build your own! It's okay if it will not be pixel perfect. But if you want some basics to start with, here it is:
 - pink: `#ff3980` 
 - dark blue: `#191635` 
 - font sizes: `20px`, `25px`, `30px`, `45px` (biggest one only for main heading)
@@ -74,9 +74,9 @@ Manager gave you this list of tasks for you to know exactly what to do. Usually 
     - Create a link on main page that will open page #2.
     - Create a link on page #2 that will lead back to main page
 
-
+In real life, if you don't understand the task — you ask manager who gave you task for details. So if something is unclear — ask me (Alina) :) 
 
 ---------------
 
-If something goes very wrong and you are stuck in repeating lecture material — you can see results in [classwork folder](https://github.com/alynioke/rtg-mentorship-2022/tree/main/lecture%201/classwork) here on Github. If issues appear when you're doing homework — you can check code in [homework folder](https://github.com/alynioke/rtg-mentorship-2022/tree/main/lecture%201/homework). I encourage you not to copy paste everything from there — after all, in real life, there will be no folder with solutions! So use results only when stuck. And as Laura said, "practice brings confidence" — so I hope that you will practice!
+If something goes very wrong and you are stuck in repeating lecture material — you can see end result in [classwork folder](https://github.com/alynioke/rtg-mentorship-2022/tree/main/lecture%201/classwork). If issues appear when you're doing homework — you can check code in [homework folder](https://github.com/alynioke/rtg-mentorship-2022/tree/main/lecture%201/homework). I encourage you not to copy paste everything from there — after all, in real life, there will be no folder with solutions! So use results only when really stuck and googling didn't help. And as Laura said, "practice brings confidence" — so I hope that you will practice!
 
