@@ -1,6 +1,6 @@
 /* REUSABLE STYLINGS START */
 body {
-  font-family: 'Audiowide', serif;
+  font-family: "Audiowide", serif;
 }
 
 .button {
@@ -33,7 +33,7 @@ body {
 .intro {
   height: 45vh;
   color: white;
-  background: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e);
+  background: url(https://media.istockphoto.com/vectors/forest-landscape-illustration-vector-id907887884?k=20&m=907887884&s=170667a&w=0&h=qKbVL1RdhtbRdZzDlPqX2H4F9wY1zoAZzC9Joy1fTU8=);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; /* creates cool parallax scrolling effect */
