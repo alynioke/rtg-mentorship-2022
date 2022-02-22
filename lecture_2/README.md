@@ -39,3 +39,28 @@ Slides available at: https://1drv.ms/p/s!ApcAVKhk9or79wmlENUOCFkXLxR1?e=fZi1T3
    Tutorial: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 2. Visit your website at ```https://<username>.github.io/<repository>```
 
+# Homework
+
+To better learn this material please see the homework below.
+
+We are going to create a simple, personal webpage, which is all about you!<br>
+Share simple things about yourself, thoughts on life or picutres of pets :) 
+
+> Beware that our website will be **public** and **available online!**
+
+I advice to do most of the work via Git Bash (Windows) or Terminal (MacOS/Linux)
+
+1. Create a new repository on GitHub for your personal website
+2. Clone this repository to your local computer
+3. Create index.html and style.css, then go on and create your personal webpage<br>
+   a page about you, than you can use to show your friends and family :P
+4. Stage the files and commit the changes
+5. Push them into repository
+6. Enabled `Pages` to work with your GitHub repository
+7. Share your creation and be proud of it!
+
+# After thoguhts
+
+Meet you in the `Riga Tech Girls` slack channel!
+
+> Author: Bogdans Ozerkins <b.ozerkins@outlook.com>
