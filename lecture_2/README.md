@@ -41,8 +41,6 @@ Slides available at: https://1drv.ms/p/s!ApcAVKhk9or79wmlENUOCFkXLxR1?e=fZi1T3
 
 # Homework
 
-To better learn this material please see the homework below.
-
 We are going to create a simple, personal webpage, which is all about you!<br>
 Share simple things about yourself, thoughts on life or picutres of pets :) 
 
