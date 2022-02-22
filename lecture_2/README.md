@@ -18,6 +18,8 @@ This will provide understanding of what is Git and why we need it, as well as ba
 
 # Topic of the leacture
 
+Slides available at: https://1drv.ms/p/s!ApcAVKhk9or79wmlENUOCFkXLxR1?e=fZi1T3
+
 ## First GitHub repository
 1. Creating a new GitHub repository
 2. Cloning the repository locally
