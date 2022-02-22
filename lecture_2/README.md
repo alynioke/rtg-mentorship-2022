@@ -2,16 +2,38 @@
 
 This folder provides guidance on working with Git, GitHub and publishing your webpage.
 
+Learning git and Github will help you to publish your website online to show the results of your work to your friends, family, and future employer! Moreover, when you will be doing homework for future job applications, employers always ask you to share your code via Github, so this skill is a must-have for a junior front-end developer.
+
 # Pre-Homework
 
 Before we go into details, there are few exercises that are worth going through. 
 This will provide understanding of what is Git and why we need it, as well as basic Git operations.
 
-1. *Check out this video* - Git Tutorial Part 1: What is Version Control? It explains in details why people use Version Control, Git (and GitHub), and what would happen without it. It’s a pretty cool intro into how programmers collaborate, when they work on the same project.
+1. *Check out this video* - [Git Tutorial Part 1: What is Version Control?](https://www.youtube.com/watch?v=9GKpbI1siow) It explains in details why people use Version Control, Git (and GitHub), and what would happen without it. It’s a pretty cool intro into how programmers collaborate, when they work on the same project.
 
 2. *Go through (and even better - complete) this tutorial* - https://docs.github.com/en/get-started/quickstart/hello-world. It helps you get a basic understanding of what is GitHub (which uses Git) and it provides great first insights into the world of sharing code. It’s very straight forward, but please read the text carefully and don’t be afraid to break things :sweat_smile:
 
 3. *Set up Git on your computer*. https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git There are instructions for all the operating systems: Linux-based, MacOS, Windows. You need only the **Setting up part**, nothing more.
 
 
+# Topic of the leacture
+
+## First GitHub repository
+1. Creating a new GitHub repository
+2. Cloning the repository locally
+3. Creating new changes to files
+4. Sync-ing local changes with GitHub
+5. Existing code with New GitHub repository<br>
+   For cases where you create new project and forgot to create a github repository first :)
+
+## Working on GitHub with others
+1. Add other people as collaborators
+2. Working together in the `main` branch
+3. Creating separate branches for your work
+
+
+## Publishing your Website
+1. In the GitHub repository settings, enable pages for your main branch<br>
+   Tutorial: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+2. Visit your website at ```https://<username>.github.io/<repository>```
 
