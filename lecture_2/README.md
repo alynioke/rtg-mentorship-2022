@@ -16,7 +16,7 @@ This will provide understanding of what is Git and why we need it, as well as ba
 3. *Set up Git on your computer*. https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git There are instructions for all the operating systems: Linux-based, MacOS, Windows. You need only the **Setting up part**, nothing more.
 
 
-# Topic of the leacture
+# Topic of the lecture
 
 Slides available at: https://1drv.ms/p/s!ApcAVKhk9or79wmlENUOCFkXLxR1?e=fZi1T3
 
@@ -42,7 +42,7 @@ Slides available at: https://1drv.ms/p/s!ApcAVKhk9or79wmlENUOCFkXLxR1?e=fZi1T3
 # Homework
 
 We are going to create a simple, personal webpage, which is all about you!<br>
-Share simple things about yourself, thoughts on life or picutres of pets :) 
+Share simple things about yourself, thoughts on life or pictures of pets :) 
 
 > Beware that our website will be **public** and **available online!**
 
@@ -57,7 +57,7 @@ I advice to do most of the work via Git Bash (Windows) or Terminal (MacOS/Linux)
 6. Enabled `Pages` to work with your GitHub repository
 7. Share your creation and be proud of it!
 
-# After thoguhts
+# After thoughts
 
 Meet you in the `Riga Tech Girls` slack channel!
 
