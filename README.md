@@ -9,8 +9,8 @@ Check the leacture_* folder for learning materials.
 ## Communication
 
 Feel free to ask questions to 
-1) your mentors 
-2) people in Front-End RTG Slack channel 
+1) Your mentors 
+2) People in Front-End RTG Slack channel 
 3) Anyone who's in it
 
 Create an issue in this repo, if you notice a typo. 

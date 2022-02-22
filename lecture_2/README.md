@@ -1,1 +1,5 @@
-# Learning to work with Git, GitHub and publish your webpage
+# Learning to work with GitHub and publish your webpage
+
+
+# Preparations
+
