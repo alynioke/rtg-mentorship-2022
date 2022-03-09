@@ -100,14 +100,12 @@ html {
 }
 
 .question-container {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .question {
   font-size: 25px;
   font-weight: bold;
-
-  margin-bottom: 20px;
 }
 
 .question-interactive {
@@ -115,7 +113,7 @@ html {
   border-radius: 10px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: border 0.5s;
 }
 
 .question-interactive:hover {
@@ -126,9 +124,9 @@ html {
   font-size: 20px;
   padding-left: 30px;
 
-  max-height: auto;
+  max-height: fit-content;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: max-height 0.5s;
 }
 
 .answer.closed {
@@ -136,7 +134,10 @@ html {
 }
 
 .answer.open {
-  max-height: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  max-height: fit-content;
 }
 /* FAQ END */
 

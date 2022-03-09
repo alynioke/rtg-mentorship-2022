@@ -1,4 +1,3 @@
-
 /**
   NOTE:
   It is good practice to keep your values in function scope while writing pure JavaScript to not to interfere with other script files.
@@ -33,9 +32,6 @@ const getAnswer = (parentElement) => {
 const toggleTitleStyle = (title, forcedClassName) => {
   // Pick opposite class for toggled state.
   const isRight = title.className.includes("chevron right");
-
-  console.log("wasd", isRight);
-
   const nextTitleState = isRight ? "bottom" : "right";
 
   // Override with forced className if provided
@@ -86,9 +82,30 @@ const getQuestions = () => {
 
   return questionsAsMap;
 };
+
+// Add default toggled style for all questions
+const resetQuestionStyle = (question) => {
+  const title = getTitle(question);
+    const answer = getAnswer(question);
+
+    toggleTitleStyle(title, "right");
+    toggleAnswerStyle(answer, "closed");
+}
+
+// Question title click handler
+const handleQuestionTitleClick = (questions) => {
+  questions.map(question => {
+    resetQuestionStyle(question);
+  })
+
+  toggleTitleStyle(title);
+  toggleAnswerStyle(answer);
+}
 /* HELPER FUNCTIONS END */
 
 const main = () => {
+  console.log('Initialize interactive FAQ');
+
   // Get all questions
   const questions = getQuestions();
 
@@ -98,11 +115,16 @@ const main = () => {
     const answer = getAnswer(question);
 
     // Set initial state
-    toggleTitleStyle(title, "right");
-    toggleAnswerStyle(answer, "closed");
+    resetQuestionStyle(question);
 
     // Add interactive question title click
     title.onclick = () => {
+      // Map and set all the questions to closed
+      questions.map(question => {
+        resetQuestionStyle(question);
+      })
+
+      // Open clicked question
       toggleTitleStyle(title);
       toggleAnswerStyle(answer);
     };
