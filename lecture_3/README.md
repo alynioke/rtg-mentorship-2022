@@ -2,7 +2,14 @@
 
 ## Prerequisites & getting started
 
+- Youtube For beginners
+  - [JavaScript Basics](https://www.youtube.com/playlist?list=PLpDGn9xs9oZnacBta9zmdYDr8yuVf09wF)
+- Course
+
+  - [Learn Programming Online](https://learnprogramming.online/)
+
 - Getting started
+  - [MDN Documentation on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - one of best sources of information about JavaScript
   - What is [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
   - How to link JavaScript file to HTML
   - How to access DOM (HTML) elements
