@@ -9,9 +9,9 @@ Here are five whys of JavaScript:
 
 ## The five whys of JavaScript
 
-### 1. Why Javascript?
+### 1. Why JavaScript?
 
-Javascript was born out of necessity by NetScape developer. Initially called "Mocha". Fun fact: The initial version was created in just 10 days.
+JavaScript was born out of necessity by NetScape developer. Initially called "Mocha". Fun fact: The initial version was created in just 10 days.
 
 ### 2. Why was JavaScript made by NetScape?
 
