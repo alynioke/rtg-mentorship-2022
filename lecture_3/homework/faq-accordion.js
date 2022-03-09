@@ -1,8 +1,7 @@
 /**
   NOTE:
-  It is good practice to keep your values in function scope while writing pure JavaScript to not to interfere with other script files.
-
-  I prefer creating main() function, this way any variable I define in this function wont interfere with other document scripts.
+  - It is good practice to keep your values in function scope while writing pure JavaScript to not to interfere with other script files.
+  - I prefer creating main() function, this way any variable I define in this function wont interfere with other document scripts.
 */
 
 /* HELPER FUNCTIONS START */
@@ -86,25 +85,32 @@ const getQuestions = () => {
 // Add default toggled style for all questions
 const resetQuestionStyle = (question) => {
   const title = getTitle(question);
-    const answer = getAnswer(question);
+  const answer = getAnswer(question);
 
-    toggleTitleStyle(title, "right");
-    toggleAnswerStyle(answer, "closed");
-}
+  toggleTitleStyle(title, "right");
+  toggleAnswerStyle(answer, "closed");
+};
 
 // Question title click handler
-const handleQuestionTitleClick = (questions) => {
-  questions.map(question => {
-    resetQuestionStyle(question);
-  })
+const handleQuestionTitleClick = (currentQuestion, questions) => {
+  const title = getTitle(currentQuestion);
+  const answer = getAnswer(currentQuestion);
+
+  questions.map((question) => {
+    // Check if the question that we will reset style is not the same question we are currently clicking
+    if (question !== currentQuestion) {
+      resetQuestionStyle(question);
+    }
+  });
 
   toggleTitleStyle(title);
   toggleAnswerStyle(answer);
-}
+};
 /* HELPER FUNCTIONS END */
 
+/* Main Function that initializes FAQ interactive buttons START */
 const main = () => {
-  console.log('Initialize interactive FAQ');
+  console.log("Initialize interactive FAQ");
 
   // Get all questions
   const questions = getQuestions();
@@ -112,23 +118,14 @@ const main = () => {
   // Add extra sugar - hover state and default chevron position, hide answer
   questions.map((question) => {
     const title = getTitle(question);
-    const answer = getAnswer(question);
 
     // Set initial state
     resetQuestionStyle(question);
 
     // Add interactive question title click
-    title.onclick = () => {
-      // Map and set all the questions to closed
-      questions.map(question => {
-        resetQuestionStyle(question);
-      })
-
-      // Open clicked question
-      toggleTitleStyle(title);
-      toggleAnswerStyle(answer);
-    };
+    title.onclick = () => handleQuestionTitleClick(question, questions);
   });
 };
 
 main();
+/* Main Function that initializes FAQ interactive buttons END */

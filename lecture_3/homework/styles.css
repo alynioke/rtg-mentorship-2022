@@ -1,4 +1,5 @@
 /* Variables */
+/* NOTE: Define most used CSS values as variables for easy access */
 :root {
   --color-rtg-pink: #ff3980;
   --color-white: #fff;
@@ -106,6 +107,7 @@ html {
 .question {
   font-size: 25px;
   font-weight: bold;
+  display: block;
 }
 
 .question-interactive {
@@ -117,7 +119,7 @@ html {
 }
 
 .question-interactive:hover {
-    border: 1px solid var(--color-rtg-pink);
+  border: 1px solid var(--color-rtg-pink);
 }
 
 .answer {
