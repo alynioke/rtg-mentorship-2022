@@ -1,5 +1,0 @@
-const init faqList = () => {
-
-}
-
-faqList();

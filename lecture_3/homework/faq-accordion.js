@@ -1,7 +1,7 @@
 /**
   NOTE:
   - It is good practice to keep your values in function scope while writing pure JavaScript to not to interfere with other script files.
-  - I prefer creating main() function, this way any variable I define in this function wont interfere with other document scripts.
+  - I prefer creating init() function, this way any variable I define in this function wont interfere with other document scripts.
 */
 
 /* HELPER FUNCTIONS START */
