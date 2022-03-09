@@ -131,6 +131,8 @@ const initFaqAccordion = () => {
 
 /* Add FAQ data as HTML START */
 const faqList = () => {
+  console.log("Initialize FAQ List from data");
+
   const faqData = [
     {
       question: `When is the deadline for applications?`,
@@ -214,6 +216,7 @@ const faqList = () => {
   // Create container for all items.
   // NOTE: It is good practice to reduce appends to DOM elements like faq, so we keep that to the last step.
   const faq = document.getElementById("faq");
+  faq.innerHTML = "";
 
   const faqContainer = document.createElement("div");
   faqContainer.id = "faq-container";
