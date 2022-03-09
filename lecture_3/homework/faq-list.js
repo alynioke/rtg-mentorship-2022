@@ -1,0 +1,5 @@
+const init faqList = () => {
+
+}
+
+faqList();
