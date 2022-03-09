@@ -83,6 +83,7 @@ To keep track of all changes versions are called EcmaScript. Currently most supp
   - [Memory Heap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
   - [If Javascript Is Single Threaded, How Is It Asynchronous?](https://dev.to/bbarbour/if-javascript-is-single-threaded-how-is-it-asynchronous-56gd)
 - [What is asynchronous functionality and what does Promise do?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [What is Typescript](https://www.typescriptlang.org/) - a flavor (superset) of JavaScript that adds types. Once you feel confident with JavaScript fundamentals, I highly recommend picking up Typescript, it is one of most popular superset of JavaScript improving code readability, transparency and maintainability. Fair warning - the learning curve is a steep, but rewarding.
 
 ---
 
