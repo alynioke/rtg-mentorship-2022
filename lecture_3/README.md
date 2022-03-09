@@ -1,24 +1,64 @@
 # Instructions to create dynamic open/close FAQ section
 
+---
+
+## The five whys of JavaScript
+
+The three pillars of modern world WEB Development are HTML, CSS, and JavaScript.
+If HTML adds structure and CSS adds flavour and style, then JavaScript brings the page to life.
+
+Here are five whys of JavaScript
+
+### 1. Why Javascript?
+
+Javascript was born out of necessity by NetScape developer. Initially called "Mocha". Fun fact: The initial version was created in just 10 days.
+
+### 2. Why it was JavaScript made by NetScape?
+
+During Browser wars: NetScape vs Microsoft, NetScape were looking for an edge (pun not intended) over Microsoft in terms of served page and internet quality.
+
+### 3. Why was JavaScript created?
+
+To provide more value and support for served web pages. With JavaScript support from the NetScape, the browser was able to add interactive events to page improving readability and user experience that other browsers were not able to do at the time.
+
+### 4. What made JavaScript popular to get adapted not only by Netscape but all common browsers?
+
+JavaScript quickly gained popularity by being able to turn static pages in live interactive mediums for viewers, thus getting wildly adapted by all popular browsers and becoming house hold Web Development tool.
+
+### 5. What helps JavaScript to stay popular and one of top most used languages even today?
+
+JavaScript is still undergoing rapid growth, and there are more supported features ever year. Allowing Developers to create complex and wonderful applications completely in your browser. No installation necessary, open URL and start editing document or spreadsheet, or stream a movie, or even play a game and chat with your friends.
+To keep track of all changes versions are called EcmaScript. Currently most supported version is [EcmaScript 6](https://caniuse.com/?search=es6)
+
+---
+
 ## Prerequisites & getting started
 
-- Youtube For beginners
+### Getting started Resources
+
+- History
+  - [The History of JavaScript: Everything You Need to Know](https://www.springboard.com/blog/data-science/history-of-javascript/)
+- Youtube
   - [JavaScript Basics](https://www.youtube.com/playlist?list=PLpDGn9xs9oZnacBta9zmdYDr8yuVf09wF)
 - Course
 
   - [Learn Programming Online](https://learnprogramming.online/)
 
-- Getting started
-  - [MDN Documentation on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - one of best sources of information about JavaScript
-  - What is [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-  - How to link JavaScript file to HTML
-  - How to access DOM (HTML) elements
-  - What is JavaScript
-  - What is [EcmaScript](https://en.wikipedia.org/wiki/ECMAScript) and [Ecma6 Support](https://caniuse.com/?search=es6)
-  - What is ECMA6 syntax
-    - [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-    - [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-    - [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+### Most Commonly used resources related to our lecture
+
+- [MDN Documentation on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - one of best sources of information about JavaScript
+- What is [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [How to link JavaScript file to HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+- How to access DOM (HTML) elements
+  - [By ID attribute](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+  - [By ClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+  - [With query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) - really handy, supports most of CSS selectors, even advanced ones
+- What is [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- What is [EcmaScript](https://en.wikipedia.org/wiki/ECMAScript) and [Ecma6 Support](https://caniuse.com/?search=es6)
+- What is ECMA6 syntax (currently used in lecture, there are many more)
+  - [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+  - [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+  - [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 - JavaScript and working with data (The bread and butter of JavaScript)
   - [Data types and Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
     - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) and [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
@@ -31,8 +71,11 @@
     - Simple and advanced operator functions - like `Helper Functions` in our lecture
     - Event functions - like [OnClick](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) handler function for our FAQ Question title to allow user interact with content
 
+---
+
 ## Good to know in future
 
+- [History of EcmaScript](https://www.benmvp.com/blog/learning-es6-history-of-ecmascript/)
 - What is event loop?
   - [Jake Archibald: In The Loop - JSConf.Asia](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
   - [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
