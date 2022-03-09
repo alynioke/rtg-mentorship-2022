@@ -2,18 +2,18 @@
 
 ---
 
-## The five whys of JavaScript
-
 The three pillars of modern world WEB Development are HTML, CSS, and JavaScript.
 If HTML adds structure and CSS adds flavour and style, then JavaScript brings the page to life.
 
-Here are five whys of JavaScript
+Here are five whys of JavaScript:
+
+## The five whys of JavaScript
 
 ### 1. Why Javascript?
 
 Javascript was born out of necessity by NetScape developer. Initially called "Mocha". Fun fact: The initial version was created in just 10 days.
 
-### 2. Why it was JavaScript made by NetScape?
+### 2. Why was JavaScript made by NetScape?
 
 During Browser wars: NetScape vs Microsoft, NetScape were looking for an edge (pun not intended) over Microsoft in terms of served page and internet quality.
 
@@ -21,11 +21,11 @@ During Browser wars: NetScape vs Microsoft, NetScape were looking for an edge (p
 
 To provide more value and support for served web pages. With JavaScript support from the NetScape, the browser was able to add interactive events to page improving readability and user experience that other browsers were not able to do at the time.
 
-### 4. What made JavaScript popular to get adapted not only by Netscape but all common browsers?
+### 4. Why JavaScript got so popular to get adapted not only by Netscape but all common browsers?
 
 JavaScript quickly gained popularity by being able to turn static pages in live interactive mediums for viewers, thus getting wildly adapted by all popular browsers and becoming house hold Web Development tool.
 
-### 5. What helps JavaScript to stay popular and one of top most used languages even today?
+### 5. Why JavaScript keeps staying popular and one of top most used languages even today?
 
 JavaScript is still undergoing rapid growth, and there are more supported features ever year. Allowing Developers to create complex and wonderful applications completely in your browser. No installation necessary, open URL and start editing document or spreadsheet, or stream a movie, or even play a game and chat with your friends.
 To keep track of all changes versions are called EcmaScript. Currently most supported version is [EcmaScript 6](https://caniuse.com/?search=es6)
