@@ -67,7 +67,6 @@ To keep track of all changes versions are called EcmaScript. Currently most supp
   - [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
     - [Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
     - [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document) functionality
-    - [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
     - Simple and advanced operator functions - like `Helper Functions` in our lecture
     - Event functions - like [OnClick](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) handler function for our FAQ Question title to allow user interact with content
 
@@ -84,6 +83,7 @@ To keep track of all changes versions are called EcmaScript. Currently most supp
   - [If Javascript Is Single Threaded, How Is It Asynchronous?](https://dev.to/bbarbour/if-javascript-is-single-threaded-how-is-it-asynchronous-56gd)
 - [What is asynchronous functionality and what does Promise do?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [What is Typescript](https://www.typescriptlang.org/) - a flavor (superset) of JavaScript that adds types. Once you feel confident with JavaScript fundamentals, I highly recommend picking up Typescript, it is one of most popular superset of JavaScript improving code readability, transparency and maintainability. Fair warning - the learning curve is a steep, but rewarding.
+- [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 ---
 
