@@ -1,132 +1,4 @@
-/* HELPER FUNCTIONS START */
-
-// Get all FAQ question elements using CSS Selector from DOM
-const getQuestionsNodeList = () => {
-  const containerSelector = "div#faq .question-container";
-
-  return document.querySelectorAll(containerSelector);
-};
-
-// Get Question title element from DOM
-const getTitle = (parentElement) => {
-  const questionSelector = ".question";
-
-  return parentElement.querySelector(questionSelector);
-};
-
-// Get Question answer element from DOM
-const getAnswer = (parentElement) => {
-  const answerSelector = ".answer";
-
-  return parentElement.querySelector(answerSelector);
-};
-
-// Toggle Title Chevron
-const toggleTitleStyle = (title, forcedClassName) => {
-  // Pick opposite class for toggled state.
-  const isRight = title.className.includes("chevron right");
-  const nextTitleState = isRight ? "bottom" : "right";
-
-  // Override with forced className if provided
-  title.className = `question question-interactive chevron ${
-    forcedClassName || nextTitleState
-  }`;
-};
-
-// Toggle Answer
-const toggleAnswerStyle = (answer, forcedClassName) => {
-  // Pick opposite class for toggled state.
-  const isClosed = answer.className.includes("closed");
-  const nextAnswerState = isClosed ? "open" : "closed";
-
-  // Override with forced className if provided
-  answer.className = `answer ${forcedClassName || nextAnswerState}`;
-};
-
-// Convert if possible Selector NodeList (Iterable Object) to Array
-const nodeListToArray = (nodeList) => {
-  // Verify if we can iterate NodeList as Array
-  let nodeListAsMap = [];
-
-  // If possible, convert to array.
-  if (nodeList.length) {
-    nodeListAsMap = Array.from(nodeList);
-  } else {
-    console.error("provided NodeList is not iterable");
-  }
-
-  return nodeListAsMap;
-};
-
-// Get Questions as an Array
-const getQuestions = () => {
-  const questionsNodeList = getQuestionsNodeList();
-
-  if (questionsNodeList.length <= 0) {
-    console.error("no FAQ elements found :(", questionsNodeList);
-
-    // Return empty Array on error
-    return [];
-  } else {
-    console.log("Found some FAQ Questions Yay!", questionsNodeList);
-  }
-
-  const questionsAsMap = nodeListToArray(questionsNodeList);
-
-  return questionsAsMap;
-};
-
-// Add default toggled style for all questions
-const resetQuestionStyle = (question) => {
-  const title = getTitle(question);
-  const answer = getAnswer(question);
-
-  toggleTitleStyle(title, "right");
-  toggleAnswerStyle(answer, "closed");
-};
-
-// Question title click handler
-const handleQuestionTitleClick = (currentQuestion, questions) => {
-  const title = getTitle(currentQuestion);
-  const answer = getAnswer(currentQuestion);
-
-  questions.map((question) => {
-    // Check if the question that we will reset style is not the same question we are currently clicking
-    if (question !== currentQuestion) {
-      resetQuestionStyle(question);
-    }
-  });
-
-  toggleTitleStyle(title);
-  toggleAnswerStyle(answer);
-};
-/* HELPER FUNCTIONS END */
-
-/* Main Function that initializes FAQ interactive buttons START */
-const initFaqAccordion = () => {
-  console.log("Initialize interactive FAQ");
-
-  // Get all questions
-  const questions = getQuestions();
-
-  // Add extra sugar - hover state and default chevron position, hide answer
-  questions.map((question) => {
-    const title = getTitle(question);
-
-    // Set initial state
-    resetQuestionStyle(question);
-
-    // Add interactive question title click
-    title.onclick = () => handleQuestionTitleClick(question, questions);
-  });
-};
-
-/* Main Function that initializes FAQ interactive buttons END */
-
-/* Add FAQ data as HTML START */
 const faqList = () => {
-  console.log("Initialize FAQ List from data");
-
   const faqData = [
     {
       question: `When is the deadline for applications?`,
@@ -207,45 +79,65 @@ const faqList = () => {
     },
   ];
 
-  // Create container for all items.
-  // NOTE: It is good practice to reduce appends to DOM elements like faq, so we keep that to the last step.
-  const faq = document.getElementById("faq");
-  faq.innerHTML = "";
+  /**
+   * By using document.createElement, we would like to re-create
+   * Basic structure of a question
+   *
+    <div class="question-container">
+      <div class="question">question</div>
+      <div class="answer">answer</div>
+    </div>
+   */
+
+  const faqElement = document.getElementById("faq");
+  faqElement.innerHTML = "";
 
   const faqContainer = document.createElement("div");
   faqContainer.id = "faq-container";
 
-  // Loop trough Array of FAQ questions, and generate HTML with class names
+  const visible = "answer-visible";
+  const hidden = "answer-hidden";
+
+  const handleQuestionClick = (entryAnswer) => {
+    const isVisible = entryAnswer.className.includes(visible);
+
+    // Hide the answer
+    if (isVisible) {
+      entryAnswer.className = `answer ${hidden}`;
+    }
+
+    // if NOT isVisible
+    // Show the answer
+    if (!isVisible) {
+      entryAnswer.className = `answer ${visible}`;
+    }
+  };
+
   faqData.forEach((faqEntry) => {
-    const { question, answer, type = undefined } = faqEntry;
+    const { question, answer } = faqEntry;
 
-    // Create FAQ Question container
     const entryContainer = document.createElement("div");
-    entryContainer.className = `question-container ${type}`.trim();
+    entryContainer.className = "question-container";
 
-    // Create FAQ Question
-    const questionElement = document.createElement("div");
-    questionElement.className = "question";
-    questionElement.innerHTML = question;
+    const entryAnswer = document.createElement("div");
+    entryAnswer.className = "answer answer-hidden";
+    entryAnswer.innerHTML = answer;
 
-    // Create FAQ Answer
-    const answerElement = document.createElement("div");
-    answerElement.className = "answer";
-    answerElement.innerHTML = answer;
+    const entryQuestion = document.createElement("div");
+    entryQuestion.className = "question chevron right question-interactive";
+    entryQuestion.innerHTML = question;
+    entryQuestion.onclick = () => {
+      handleQuestionClick(entryAnswer);
+    };
 
     // Add Question and answer elements to Container
-    entryContainer.append(questionElement);
-    entryContainer.append(answerElement);
+    entryContainer.append(entryQuestion);
+    entryContainer.append(entryAnswer);
 
-    // Add newly made FAQ Question and answer to html element list container
     faqContainer.append(entryContainer);
   });
 
-  // Lastly - update FAQ element in the DOM to display all the newly made answers.
-  faq.append(faqContainer);
-
-  initFaqAccordion();
+  faqElement.append(faqContainer);
 };
 
 faqList();
-/* Add FAQ data as HTML END */

@@ -2,6 +2,35 @@
 
 ---
 
+## Homework
+
+### Beginner
+
+- Additional styling for Question and Answer to indicate when user interacts with it
+
+  - When Question is closed
+  - When Question is opened
+  - Additional style to indicate when you can click the item (cursor, color)
+    - CSS Chevron Used in example homework: [CodePen Chevron](https://codepen.io/stepher/pen/yLOaEOP)
+
+- Close previous opened question if user clicks on new one.
+  - Closes question if user clicks on it again.
+
+### Intermediate
+
+- Buttons or toggle that can open and close all questions at the same time.
+- Use helper functions for creating JavaScript elements, to simplify main code
+
+### Advanced
+
+- Questions search bar by using [string.includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) that shows only the matching questions.
+- Switch Language of FAQ
+  - Have questions and answers in multiple languages
+  - Show selected language
+  - Do not show answers that does not include selected language.
+
+---
+
 The three pillars of modern world WEB Development are HTML, CSS, and JavaScript.
 If HTML adds structure and CSS adds flavour and style, then JavaScript brings the page to life.
 

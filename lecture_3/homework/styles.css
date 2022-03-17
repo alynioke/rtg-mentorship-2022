@@ -18,13 +18,13 @@ html {
 }
 
 .button {
-  background-color: var(--color-rtg-pink);
-  color: var(--color-white);
+  background-color: #ff3980;
+  color: white;
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 10px;
-  border: 1px solid var(--color-rtg-pink);
+  border: 1px solid #ff3980;
 
   padding-top: 15px;
   padding-bottom: 15px;
@@ -33,8 +33,8 @@ html {
 }
 
 .button:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: white;
+  color: black;
   transition: all 0.5s;
 }
 
@@ -46,7 +46,7 @@ html {
 /* INTRO SLIDE START */
 .intro {
   height: 45vh;
-  color: var(--color-white);
+  color: white;
   background: url(https://media.istockphoto.com/vectors/forest-landscape-illustration-vector-id907887884?k=20&m=907887884&s=170667a&w=0&h=qKbVL1RdhtbRdZzDlPqX2H4F9wY1zoAZzC9Joy1fTU8=);
   background-size: cover;
   background-position: center center;
@@ -65,7 +65,7 @@ html {
 }
 
 .dates {
-  color: var(--color-rtg-pink);
+  color: #ff3980;
   font-size: 30px;
 
   margin-bottom: 20px;
@@ -91,8 +91,8 @@ html {
 
 /* FAQ START */
 .faq {
-  background-color: var(--color-white);
-  color: var(--color-text);
+  background-color: white;
+  color: #191635;
 
   padding-top: 40px;
   padding-bottom: 40px;
@@ -131,22 +131,22 @@ html {
   transition: max-height 0.5s;
 }
 
-.answer.closed {
+.answer-hidden {
   max-height: 0px;
 }
 
-.answer.open {
+.answer-visible {
   padding-top: 20px;
   padding-bottom: 20px;
 
   max-height: fit-content;
 }
-/* FAQ END */
+/* FAQ START */
 
 /* QUOTE START */
 .quote-container {
-  background-color: var(--color-white);
-  color: var(--color-text);
+  background-color: white;
+  color: #191635;
   text-align: center;
 
   padding-top: 100px;
@@ -165,14 +165,14 @@ html {
 }
 
 .author-link {
-  color: var(--color-rtg-pink);
+  color: #ff3980;
 }
 
 /* QUOTE END */
 
 /* VIDEO START */
 .video-container {
-  background-color: var(--color-dark);
+  background-color: #191635;
 
   padding-top: 100px;
   padding-bottom: 100px;
@@ -185,7 +185,7 @@ html {
 }
 
 .video-heading {
-  color: var(--color-white);
+  color: white;
   font-size: 30px;
 
   margin-top: 20px;
@@ -203,12 +203,12 @@ html {
   bottom: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: var(--color-dark);
+  background-color: #191635;
   text-align: center;
-  color: var(--color-white);
+  color: white;
 }
 .footer > a {
-  color: var(--color-rtg-pink);
+  color: #ff3980;
   text-decoration: none;
 }
 .footer > a:hover {
@@ -218,8 +218,8 @@ html {
 
 /* SOCIAL START */
 .social-container {
-  background-color: var(--color-dark);
-  color: var(--color-white);
+  background-color: #191635;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,6 +234,6 @@ html {
 .social-image {
   width: 80px;
   height: 80px;
-  fill: var(--color-white);
+  fill: white;
 }
 /* SOCIAL END */
