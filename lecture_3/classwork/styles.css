@@ -103,6 +103,15 @@ html {
 
 .answer {
   font-size: 20px;
+  padding-left: 40px;
+}
+
+.answer-hidden {
+  display: none;
+}
+
+.answer-visible {
+  display: initial;
 }
 /* FAQ START */
 
