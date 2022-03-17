@@ -104,14 +104,13 @@ html {
 .answer {
   font-size: 20px;
   padding-left: 40px;
-}
-
-.answer-hidden {
-  display: none;
+  height: 0px;
+  overflow: hidden;
 }
 
 .answer-visible {
-  display: initial;
+  height: fit-content;
+  overflow: visible;
 }
 /* FAQ START */
 
