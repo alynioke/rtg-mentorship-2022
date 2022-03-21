@@ -4,6 +4,8 @@
 
 ## Homework
 
+![preview](/lecture_3/ezgif-2-c15692270e.gif)
+
 ### Beginner
 
 - Additional styling for Question and Answer to indicate when user interacts with it
