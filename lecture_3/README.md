@@ -8,26 +8,54 @@
 
 - Additional styling for Question and Answer to indicate when user interacts with it
 
+  - Use Chevron - CSS Chevron Used in example homework: [CodePen Chevron](https://codepen.io/stepher/pen/yLOaEOP)
   - When Question is closed
+    - When hovered - the question should have #ff3980 border indicating it is hovered.
+    - Chevron should point right.
+    - Answer is hidden by CSS
   - When Question is opened
-  - Additional style to indicate when you can click the item (cursor, color)
-    - CSS Chevron Used in example homework: [CodePen Chevron](https://codepen.io/stepher/pen/yLOaEOP)
+    - Chevron should point bottom.
+    - Answer is visible by CSS
+  - Answer should have left padding, to better highlight that this answer is the following question above.
+
+- When a user clicks on an opened question - it closes.
 
 - Close previous opened question if user clicks on new one.
   - Closes question if user clicks on it again.
 
 ### Intermediate
 
-- Buttons or toggle that can open and close all questions at the same time.
+- Button that can open all questions at the same time.
+  - Add Button above questions (either by JavaScript create element, or HTML).
+  - When user clicks on button all answers switch to Open state and display answers
+- Button that can close all questions at the same time
+
+  - Add Button above questions (either by JavaScript create element, or HTML).
+  - When user clicks on button all Answers switch to Closed state and hide answers
+
 - Use helper functions for creating JavaScript elements, to simplify main code
+  - Organize code in smaller and single purpose functions to simplify the main FAQ List code.
 
 ### Advanced
 
 - Questions search bar by using [string.includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) that shows only the matching questions.
+  - Add Input field above FAQ,
+  - When a user inputs text, perform array search if any of the questions/answers contain users text.
+  - Display only matching Questions
+  - Show All Questions when input is clear.
+  - Add the “Clear” button, which clears the input field.
 - Switch Language of FAQ
-  - Have questions and answers in multiple languages
-  - Show selected language
-  - Do not show answers that does not include selected language.
+
+  - Modify FAQ Array
+
+    - change `{question: 'text', answer: 'text'}` to `{en: {question: 'text', answer: 'text'}, de: {question: 'text', answer: 'text'}}`
+
+  - Adjust existing code to support “en” language by default.
+  - Add Two language buttons above FAQ - EN and DE,
+  - When user clicks on Language button
+    - Show Button as “ON” with #ff3980 background.
+    - Pick selected translation from FAQ Array.
+  - Do not show answers that do not include the selected language.
 
 ---
 
