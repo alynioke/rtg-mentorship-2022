@@ -91,26 +91,45 @@ html {
 }
 
 .question-container {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .question {
   font-size: 25px;
   font-weight: bold;
+  display: block;
+}
 
-  margin-bottom: 20px;
+.question-interactive {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border 0.5s;
+}
+
+.question-interactive:hover {
+  border: 1px solid #ff3980;
 }
 
 .answer {
   font-size: 20px;
-  padding-left: 40px;
-  height: 0px;
+  padding-left: 30px;
+
+  max-height: fit-content;
   overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.answer-hidden {
+  max-height: 0px;
 }
 
 .answer-visible {
-  height: fit-content;
-  overflow: visible;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  max-height: fit-content;
 }
 /* FAQ START */
 
@@ -196,6 +215,10 @@ html {
   align-items: center;
   gap: 40px;
   padding-bottom: 30px;
+}
+
+.social-container a {
+  text-decoration: none;
 }
 
 .social-heading {
