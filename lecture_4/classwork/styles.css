@@ -1,40 +1,105 @@
-/* REUSABLE STYLINGS START */
-body {
-  font-family: "Audiowide", serif;
+/* Source: https://codepen.io/stepher/pen/yLOaEOP */
+.chevron:before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+  margin-right: 15px;
+  transition: all 0.2s;
 }
 
-html {
-  scroll-behavior: smooth;
+.chevron.right:before {
+  left: 0;
+  transform: rotate(45deg);
 }
 
-.button {
-  background-color: #ff3980;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 10px;
-  border: 1px solid #ff3980;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+.chevron.bottom:before {
+  top: 0;
+  transform: rotate(135deg);
 }
 
-.button:hover {
+.chevron.left:before {
+  left: 0.25em;
+  transform: rotate(-135deg);
+}
+
+.faq {
   background-color: white;
-  color: black;
-  transition: all 0.5s;
+  color: #191635;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.highlighted-text:hover {
+.question {
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+}
+.question-container {
+  margin-bottom: 10px;
+}
+.question-interactive {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border 0.5s;
+}
+.question-interactive:hover {
+  border: 1px solid #ff3980;
+}
+
+.answer {
+  font-size: 20px;
+  padding-left: 30px;
+  max-height: fit-content;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.answer-hidden {
+  max-height: 0px;
+}
+.answer-visible {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-height: fit-content;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #191635;
+  text-align: center;
+  color: white;
+}
+
+.footer > a {
+  color: #ff3980;
+  text-decoration: none;
+}
+
+.footer > a:hover {
   text-decoration: underline;
 }
 
-/* REUSABLE STYLINGS  END */
-/* INTRO SLIDE START */
 .intro {
-  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
   color: white;
   background: url(https://media.istockphoto.com/vectors/forest-landscape-illustration-vector-id907887884?k=20&m=907887884&s=170667a&w=0&h=qKbVL1RdhtbRdZzDlPqX2H4F9wY1zoAZzC9Joy1fTU8=);
   background-size: cover;
@@ -42,10 +107,6 @@ html {
   background-attachment: fixed;
   /* creates cool parallax scrolling effect */
   opacity: 0.85;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .main-heading {
@@ -68,68 +129,6 @@ html {
   padding-right: 100px;
 }
 
-/* INTRO SLIDE END */
-/* LEARN MORE START */
-.learn-more {
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* LEARN MORE END */
-/* FAQ START */
-.faq {
-  background-color: white;
-  color: #191635;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.question-container {
-  margin-bottom: 10px;
-}
-
-.question {
-  font-size: 25px;
-  font-weight: bold;
-  display: block;
-}
-
-.question-interactive {
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: border 0.5s;
-}
-
-.question-interactive:hover {
-  border: 1px solid #ff3980;
-}
-
-.answer {
-  font-size: 20px;
-  padding-left: 30px;
-  max-height: fit-content;
-  overflow: hidden;
-  transition: max-height 0.5s;
-}
-
-.answer-hidden {
-  max-height: 0px;
-}
-
-.answer-visible {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-height: fit-content;
-}
-
-/* FAQ START */
-/* QUOTE START */
 .quote-container {
   background-color: white;
   color: #191635;
@@ -153,62 +152,13 @@ html {
   color: #ff3980;
 }
 
-/* QUOTE END */
-/* VIDEO START */
-.video-container {
-  background-color: #191635;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column-reverse;
-}
-
-.video-heading {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.video-frame {
-  border: 0px;
-}
-
-/* VIDEO END */
-/* FOOTER START */
-.footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #191635;
-  text-align: center;
-  color: white;
-}
-
-.footer > a {
-  color: #ff3980;
-  text-decoration: none;
-}
-
-.footer > a:hover {
-  text-decoration: underline;
-}
-
-/* FOOTER END */
-/* SOCIAL START */
 .social-container {
-  background-color: #191635;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #191635;
+  color: white;
   gap: 40px;
   padding-bottom: 30px;
 }
@@ -227,6 +177,65 @@ html {
   fill: white;
 }
 
-/* SOCIAL END */
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  background-color: #191635;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.video-heading {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-frame {
+  border: 0px;
+}
+
+body {
+  font-family: "Audiowide", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  background-color: #ff3980;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #ff3980;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.button:hover {
+  background-color: white;
+  color: #191635;
+  transition: all 0.5s;
+}
+
+.highlighted-text:hover {
+  text-decoration: underline;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
 
 /*# sourceMappingURL=styles.css.map */
