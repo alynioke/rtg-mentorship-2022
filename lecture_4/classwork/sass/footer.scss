@@ -1,0 +1,19 @@
+@use 'variables.scss' as v;
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: v.$colorDark;
+    text-align: center;
+    color: v.$colorWhite;
+}
+.footer > a {
+    color: v.$colorPrimary;
+    text-decoration: none;
+}
+.footer > a:hover {
+    text-decoration: underline;
+}

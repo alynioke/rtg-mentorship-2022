@@ -1,0 +1,24 @@
+@use 'variables.scss' as v;
+@use 'helpers.scss' as h;
+
+.video-container {
+    @include h.center();
+    flex-direction: column-reverse;
+    background-color: v.$colorDark;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.video-heading {
+    color: v.$colorWhite;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-frame {
+    border: 0px;
+}
