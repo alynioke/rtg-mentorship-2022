@@ -68,15 +68,6 @@ Let's shorten this.
 
 ⚠️
 
-#### Operators
-
-- In `footer.scss` create 2 variables: one answering for margin top on mobile, another answering for margin top on desktop ([example](https://github.com/alynioke/exercise-sass-ready/blob/main/sass/footer.scss#L2))
-- Substitute margin top values in CSS for variables.
-- Now, define margin bottom for mobile and desktop, as a half of top margin, by using Sass `/` division feature ([example](https://github.com/alynioke/exercise-sass-ready/blob/main/sass/footer.scss#L9))
-- Now, values will always be recalculated automatically, we don't need to adjust it manually!
-
-⚠️
-
 #### Mixins
 
 - in `helpers.scss` define new mixin which will answer for setting width and height of the element based on passed parameter ([example](https://github.com/alynioke/exercise-sass-ready/commit/bd94eda132756ecdae40700227266661f0624007#diff-6b35906a2d871acb71bae44d81be370207a70484f8cc646eede944634b36b0a7R8))
