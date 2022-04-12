@@ -44,11 +44,11 @@ Important: if after some step something doesn't work, try stopping the sass comm
 
 #### Nesting
 
-If you have CSS selector combined from 2 classes, it means you can put one class into another by nesting. Do this where you see 2 classes combined. Same could be done for [media query] and ⚠️[for pseudo classes](https://github.com/alynioke/exercise-sass-ready/blob/main/sass/header.scss#L21) like `:hover` or `:last-of-type` (which uses special `&` character from sass for concatenation)
+If you have CSS selector combined from 2 classes, it means you can put one class into another by nesting. Do this where you see 2 classes combined. Same could be done for media query and for pseudo classes like `:hover` or `:last-of-type` (which uses special `&` character from sass for concatenation)
 
 - After doing this, now your code is easier to write! Because you don't need to prefix your classes each time with other classes, you can nest them.
 
-#### Include
+#### Mixins
 
 In some places in various sass files there is some repeated code. This repeated code answers for centering elements in CSS. It has 3 rules:
 
@@ -66,12 +66,3 @@ Let's shorten this.
 - Use this mixin to substitute abovementioned rules in each place they appear with `@include`.
 - Now there is less code and no repetitions! And code is easier to manage, because if we need to change centering we can do so from 1 place!
 
-⚠️
-
-#### Mixins
-
-- in `helpers.scss` define new mixin which will answer for setting width and height of the element based on passed parameter ([example](https://github.com/alynioke/exercise-sass-ready/commit/bd94eda132756ecdae40700227266661f0624007#diff-6b35906a2d871acb71bae44d81be370207a70484f8cc646eede944634b36b0a7R8))
-- for recipe image for mobile and desktop Media Query use 1 line mixin to define square dimensions instead of width and height ([example](https://github.com/alynioke/exercise-sass-ready/blob/main/sass/recipes.scss#L35))
-- Mixins allow you to define styles that can be re-used throughout your stylesheet!
-
-  EXTRACT helpers and variables into 1 file and include that instead of 2 lines in each file
