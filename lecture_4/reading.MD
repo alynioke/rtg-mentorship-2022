@@ -30,7 +30,7 @@ If you'll find resources that speak better on those topics, please create a pull
 We learned how lazy developers don't wanna write too much of code and won't lose the change to use someone elses code 😏 
 But with reliance on someone else's code we might lose security or autonomy 🤔 Read those 2 fantastic stories to understand more about package eco-system: 
 * [How one programmer broke the internet by deleting a tiny piece of code](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code/) - this actually happened real-time when I was at work, I remember the panic everyone had! 
-* ["I’m harvesting credit card numbers and passwords from your site. Here’s how."](https://medium.com/hackernoon/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5) - this one is freaky! Btw it has horrible green background, so it's unreadable, see in instruction below how I fixed it.
+* ["I’m harvesting credit card numbers and passwords from your site. Here’s how."](https://medium.com/hackernoon/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5) - this one is freaky! It's OK if you won't get details which are mentioned, just follow the idea to see how easy it would be to do something bad with packages. Btw it has horrible green background for some reason, so it's unreadable, see in instruction below how I fixed it.
 
 
 <details>
