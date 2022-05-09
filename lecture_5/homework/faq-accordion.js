@@ -64,6 +64,11 @@ const getEntryAnswer = (answer, index) => {
   const answerElement = document.createElement("div");
   answerElement.className = "answer answer-hidden";
   answerElement.innerHTML = answer;
+
+  /**
+   * This and following a11y features inspired by:
+   * https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html
+   */
   answerElement.setAttribute('id', `answer-${index}`);
   answerElement.setAttribute('aria-expanded', 'false');
   answerElement.setAttribute('aria-role', 'region');
