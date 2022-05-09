@@ -12,6 +12,8 @@ const handleOpenQuestion = (entryQuestion) => {
 const handleOpenAnswer = (entryAnswer) => {
   // Toggle off className answer-hidden
   entryAnswer.classList.toggle("answer-hidden");
+  const isExpanded = entryAnswer.getAttribute('aria-expanded') === 'true';
+  entryAnswer.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false' );
 };
 
 /**
@@ -34,6 +36,8 @@ const handleHideOtherQuestions = (currentAnswer) => {
     question.classList.remove("bottom");
     question.classList.add("right");
     answer.classList.add("answer-hidden");
+    answer.setAttribute('aria-expanded', 'false');
+
   });
 };
 
@@ -56,18 +60,24 @@ const getFaqListContainer = () => {
   return container;
 };
 
-const getEntryAnswer = (answer) => {
+const getEntryAnswer = (answer, index) => {
   const answerElement = document.createElement("div");
   answerElement.className = "answer answer-hidden";
   answerElement.innerHTML = answer;
+  answerElement.setAttribute('id', `answer-${index}`);
+  answerElement.setAttribute('aria-expanded', 'false');
+  answerElement.setAttribute('aria-role', 'region');
+  answerElement.setAttribute('aria-labelledby', `question-${index}`);
 
   return answerElement;
 };
 
-const getEntryQuestion = (question) => {
+const getEntryQuestion = (question, index) => {
   const questionElement = document.createElement("button");
   questionElement.className = "button question chevron right question-interactive";
   questionElement.innerHTML = question;
+  questionElement.setAttribute('id', `question-${index}`);
+  questionElement.setAttribute('aria-controls', `answer-${index}`);
 
   return questionElement;
 };
@@ -174,11 +184,11 @@ const faqList = () => {
     handleOpenAnswer(entryAnswer);
   };
 
-  faqData.forEach((faqEntry) => {
+  faqData.forEach((faqEntry, index) => {
     const { question, answer } = faqEntry;
 
-    const entryAnswer = getEntryAnswer(answer);
-    const entryQuestion = getEntryQuestion(question);
+    const entryAnswer = getEntryAnswer(answer, index);
+    const entryQuestion = getEntryQuestion(question, index);
 
     // Add Question Click
     entryQuestion.onclick = () => {
