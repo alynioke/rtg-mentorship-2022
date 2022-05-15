@@ -8,9 +8,11 @@
 @use 'social.scss';
 @use 'video.scss';
 @use 'accessibility.scss';
+@use 'nav.scss';
 
 body {
   font-family: "Audiowide", serif;
+  margin: 0;
 }
 
 html {

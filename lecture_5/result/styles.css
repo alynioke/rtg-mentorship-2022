@@ -224,8 +224,34 @@
   text-transform: none;
 }
 
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #191635;
+  text-align: center;
+  color: white;
+}
+.nav .nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.nav a {
+  color: #ff3980;
+  text-decoration: none;
+}
+.nav a:hover, .nav a:focus {
+  text-decoration: underline;
+}
+
 body {
   font-family: "Audiowide", serif;
+  margin: 0;
 }
 
 html {

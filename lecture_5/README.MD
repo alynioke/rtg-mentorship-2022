@@ -8,7 +8,8 @@ Run your project and make some adjustments!
 ### Improve the site structure
 Convert each "container" `<div>` into `<section>`. (By containter I mean e.g. `<div class="intro">` or `<div class="social-container">`)
 ### Use a landmark!
-Convert `<div class="footer">` into `<footer class="footer">`
+1. Encapsule all your sections into `<main>` element to distinguish it from footer and navigation.
+2. Convert `<div class="footer">` into `<footer class="footer">`
 ### Site header
 Page should contain exactly one `<h1>` header - it's not prohibited by HTML specification, but having only one top-level header is better for screen reader users: [documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#usage_notes).  
 Make `<div class="main-heading">Mentorship program</div>` an `<h1>`.
@@ -78,6 +79,7 @@ Try to give a screen reader user an idea of ection content only by looking at th
 ### Navigation
 Your site already has a footer, but what about navigation?  
 Add one with links pointing to the sections you added previously.
+You can sneak peek on the one provided in `/result` directory, but I encourage you to make your own :)
 
 ## Make accordion accessible
 
