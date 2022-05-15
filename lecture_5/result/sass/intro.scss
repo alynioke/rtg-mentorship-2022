@@ -1,0 +1,36 @@
+@use 'helpers.scss' as h;
+@use 'variables.scss' as v;
+
+.intro {
+    @include h.center;
+    flex-direction: column;
+    height: 60vh;
+    color: v.$colorWhite;
+    background: url(https://media.istockphoto.com/vectors/forest-landscape-illustration-vector-id907887884?k=20&m=907887884&s=170667a&w=0&h=qKbVL1RdhtbRdZzDlPqX2H4F9wY1zoAZzC9Joy1fTU8=);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* creates cool parallax scrolling effect */
+    opacity: 0.85;
+}
+  
+.main-heading {
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.dates {
+    color: v.$colorPrimary;
+    font-size: 30px;
+  
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.intro-description {
+    text-align: center;
+    font-size: 25px;
+  
+    padding-left: 100px;
+    padding-right: 100px;
+}

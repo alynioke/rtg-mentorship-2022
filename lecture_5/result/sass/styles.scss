@@ -1,0 +1,48 @@
+@use 'variables.scss' as v;
+@use 'helpers.scss' as h;
+@use 'stylings-chevron.scss';
+@use 'faq.scss';
+@use 'footer.scss';
+@use 'intro.scss';
+@use 'quote.scss';
+@use 'social.scss';
+@use 'video.scss';
+@use 'accessibility.scss';
+
+body {
+  font-family: "Audiowide", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  background-color: v.$colorPrimary;
+  color: v.$colorWhite;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid v.$colorPrimary;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &:hover {
+    background-color: v.$colorWhite;
+    color: v.$colorDark;
+    transition: all 0.5s;
+  }
+}
+
+.highlighted-text:hover {
+  text-decoration: underline;
+}
+
+.learn-more {
+  @include h.center();
+  margin-top: 40px;
+}
