@@ -12,8 +12,6 @@ const handleOpenQuestion = (entryQuestion) => {
 const handleOpenAnswer = (entryAnswer) => {
   // Toggle off className answer-hidden
   entryAnswer.classList.toggle("answer-hidden");
-  const isExpanded = entryAnswer.getAttribute('aria-expanded') === 'true';
-  entryAnswer.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false' );
 };
 
 /**
@@ -36,13 +34,11 @@ const handleHideOtherQuestions = (currentAnswer) => {
     question.classList.remove("bottom");
     question.classList.add("right");
     answer.classList.add("answer-hidden");
-    answer.setAttribute('aria-expanded', 'false');
-
   });
 };
 
 const getAnswerContainer = (entryQuestion, entryAnswer) => {
-  const entryContainer = document.createElement("li");
+  const entryContainer = document.createElement("div");
   entryContainer.className = "question-container";
 
   entryContainer.append(entryQuestion);
@@ -54,35 +50,21 @@ const getAnswerContainer = (entryQuestion, entryAnswer) => {
 const getFaqListContainer = () => {
   // Create pseudocontainer,
   // that does not exist in DOM yet for more performant entry append after we have generated all necessary HTML
-  const container = document.createElement("ul");
-  container.className = "accordion-list";
-
-  return container;
+  return document.createElement("div");
 };
 
-const getEntryAnswer = (answer, index) => {
+const getEntryAnswer = (answer) => {
   const answerElement = document.createElement("div");
   answerElement.className = "answer answer-hidden";
   answerElement.innerHTML = answer;
 
-  /**
-   * This and following a11y features inspired by:
-   * https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html
-   */
-  answerElement.setAttribute('id', `answer-${index}`);
-  answerElement.setAttribute('aria-expanded', 'false');
-  answerElement.setAttribute('aria-role', 'region');
-  answerElement.setAttribute('aria-labelledby', `question-${index}`);
-
   return answerElement;
 };
 
-const getEntryQuestion = (question, index) => {
-  const questionElement = document.createElement("button");
-  questionElement.className = "button question chevron right question-interactive";
+const getEntryQuestion = (question) => {
+  const questionElement = document.createElement("div");
+  questionElement.className = "question chevron right question-interactive";
   questionElement.innerHTML = question;
-  questionElement.setAttribute('id', `question-${index}`);
-  questionElement.setAttribute('aria-controls', `answer-${index}`);
 
   return questionElement;
 };
@@ -189,11 +171,11 @@ const faqList = () => {
     handleOpenAnswer(entryAnswer);
   };
 
-  faqData.forEach((faqEntry, index) => {
+  faqData.forEach((faqEntry) => {
     const { question, answer } = faqEntry;
 
-    const entryAnswer = getEntryAnswer(answer, index);
-    const entryQuestion = getEntryQuestion(question, index);
+    const entryAnswer = getEntryAnswer(answer);
+    const entryQuestion = getEntryQuestion(question);
 
     // Add Question Click
     entryQuestion.onclick = () => {
