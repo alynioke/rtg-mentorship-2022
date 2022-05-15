@@ -1,0 +1,52 @@
+@use 'variables.scss' as v;
+
+.faq {
+    background-color: v.$colorWhite;
+    color: v.$colorDark;
+  
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+  
+.question {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+
+    &-container {
+        margin-bottom: 10px;
+    }
+    &-interactive {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: border 0.5s;
+    
+        &:hover {
+            border: 1px solid v.$colorPrimary;
+        }
+    }
+}
+  
+.answer {
+    font-size: 20px;
+    padding-left: 30px;
+  
+    max-height: fit-content;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+    &-hidden {
+        max-height: 0px;
+    }
+
+    &-visible {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      
+        max-height: fit-content;
+    }
+}
