@@ -2,7 +2,8 @@
 
 Your RTG landing page looks great, but is it accessible?  
 Take your time and work on improving **every** user experience :)  
-Run your project and make some adjustments!
+Start in `/homework` directory, run your project and make some adjustments!
+In `/result` folder you can find how this landing page can look after implementing those features.
 
 ## Semantic HTML
 ### Improve the site structure
