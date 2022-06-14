@@ -1,0 +1,30 @@
+@use 'variables.scss'as v;
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: v.$colorDark;
+    text-align: center;
+    color: v.$colorWhite;
+
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    a {
+        color: v.$colorPrimary;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
